@@ -1,0 +1,11 @@
+Masz dość zastanawiania się, co jest drugim znakiem w Twoim haśle do BZWBK? Piątym? Dziesiątym?
+
+Ja miałem. Dlatego stworzyłem to proste rozszerzenie, które umieszcza pole, do którego można wpisać (bądź wkleić, np. z programu KeePass) swoje pełne hasło, jak w każdym innym formularzu.
+
+Twoje całe hasło nie jest nigdze wysyłane, nawet do serwera BZWBK. Serwer otrzymuje jedynie te znaki, których zażądał. Jeśli nie wierzysz, sprawdź kod źródłowy tego rozszerzenia lub poproś o to znajomego programistę.
+
+Tired of having to enter random characters from you password every time you log in to BZWBK?
+
+I was. So I made this extention. It adds a regular password field to the login page so you can enter the entire password just like on any other site. It even works with KeePass.
+
+Your password is not sent anywhere, not even to the BZWBK server. Only those characters that the server requested are returned to it. If you do not trust me check the source code of this extension or ask any programmer to do it for you.
