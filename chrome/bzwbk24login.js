@@ -11,16 +11,18 @@
  */
 if (document.getElementById('pinForm')) {
 	var main = function() {
-		$('#gotoold').css('margin-top', '15px'); // fix overlap
 
-		$('#pinDiv table tbody').append('<tr><td></td><td colspan=20>'
+		var login_form_container = $('#pinDiv table tbody').last();
+
+		login_form_container.append('<tr><td colspan=20>'
 			+ '<input type="password" id="full_password" maxlength="20" style="width: 100%;" />'
-			+ '</td><td></td></tr>');
+			+ '</td></tr>');
+
 		$('#full_password').focus();
 
 		$('#full_password').bind('input', function(event) {
 			var password = event.target.value;
-			var input_boxes = $('#pinDiv tbody tr:first td input:visible');
+			var input_boxes = login_form_container.find('input[type=text], input[type=password]').not(':last');
 			for (var i = 0; i < input_boxes.length; i++) {
 				if (!input_boxes[i].disabled) {
 					input_boxes[i].value = password.substring(i, i + 1);
